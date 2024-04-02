@@ -46,19 +46,7 @@ const page = () => {
     }
   }
 
-  // const signin = ()=>{
-  //   try{
-  //     const user = signInWithEmailAndPassword(email1, password1)
-  //   }
-  //   catch(err){
-  //     console.log(err.message)
-  //     alert(err.code)
-  //     if(err.code==="auth/invalid-email"){
-  //       alert("Invalid Email")
-  //       router.push("/")
-  //     }
-  //   }
-  // }
+
 
   const signin = async()=>{
     try{
@@ -67,7 +55,6 @@ const page = () => {
     }
     catch(err){
       console.error(err.message)
-      // alert(err.code)
       if(err.code==="auth/email-already-in-use"){
         alert("allredy have an account")
         router.push("/")
@@ -104,30 +91,11 @@ const page = () => {
 
             <div className={` ${active ? "" : "hidden"} h-96 w-[18rem] bg-black/0`}>
               <div className='flex flex-col items-center justify-start w-full h-full gap-3'>
-                {/* <div className=' h-[3rem] rounded-full flex justify-center items-center w-full hover:bg-slate-50 bg-white border-[0.17rem] border-slate-400'>
-                  <div className='flex flex-row w-auto h-auto gap-3'>
-                    <FcGoogle />
-                    <p className='text-sm font-bold '>Continue with Google</p>
-                  </div>
-                </div> */}
-
-                {/* <div className=' h-[3rem] rounded-full flex justify-center items-center w-full hover:bg-slate-50 bg-white border-[0.17rem] border-slate-400'>
-                  <div className='flex flex-row w-auto h-auto gap-3'>
-                    <FaGithub />
-                    <p className='text-sm font-bold '>Continue with Google</p>
-                  </div>
-                </div> */}
-
-                {/* <div className=' h-[3rem] rounded-full flex justify-center items-center w-full hover:bg-slate-50 bg-white'>
-                  <div className='flex flex-row w-auto h-auto gap-3'>
-                    <p className='text-sm font-bold text-slate-400 '>Or sign in with email</p>
-                  </div>
-                </div> */}
+                
 
                 <div className=' h-[3rem] rounded-lg flex justify-start  items-center w-full bg-slate-100'>
                   <div className='flex flex-row w-auto h-[2rem]  gap-3 '>
                     <svg className='my-auto ml-3' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
-                    {/* <p className='text-sm font-bold '>Continue with Google</p> */}
                     <input className='w-full outline-none border-none h-[2rem] text-black bg-transparent' placeholder='Email' type="email" onChange={(e) => { setEmail(e.target.value) }} />
                   </div>
                 </div>
@@ -135,7 +103,6 @@ const page = () => {
                 <div className=' h-[3rem] rounded-lg flex justify-start  items-center w-full bg-slate-100'>
                   <div className='flex flex-row w-auto h-[2rem]  gap-3 '>
                     <svg className='my-auto ml-3' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
-                    {/* <p className='text-sm font-bold '>Continue with Google</p> */}
                     <input className='w-full h-[2rem] outline-none text-black bg-transparent' placeholder='Password' type="password" onChange={(e) => { setPassword(e.target.value) }} />
                   </div>
                 </div>
@@ -148,7 +115,6 @@ const page = () => {
                     <p className='text-sm font-bold ' onClick={google}>Continue with Google</p>
                   </div>
                 </div>
-                {/* <button onClick={() => { router.push("/") }}>Royter</button> */}
               </div>
             </div>
 

@@ -12,7 +12,6 @@ const Footer = () => {
                   <h1 className='text-2xl font-bold'>Subham Paradox</h1>
                   </div>
                     <div className='flex flex-row items-center justify-between gap-8 '>
-                        {/* <button className='w-auto h-auto px-3 py-2 text-sm font-semibold rounded-full bg-slate-100'>Sign in</button> */}
                         <div className='flex items-center justify-center w-auto h-auto '>
                             <div className='flex flex-col items-center justify-between gap-2 '>
                                 <h1 className='text-sm lg:text-lg'>All The Rights Are Reserved By Subham Patnaik</h1>

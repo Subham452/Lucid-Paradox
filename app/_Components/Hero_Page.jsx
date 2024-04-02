@@ -20,7 +20,6 @@ const Hero_Page = () => {
               <span className='absolute hidden lg:inline -mt-56 rounded-full ml-[30rem] bg-gradient-to-t from-sky-500 rotate-45 to-black h-14 w-14'></span>
               <span className='absolute hidden lg:inline -rotate-[60deg] rounded-full -mt-96 bg-gradient-to-t from-yellow-500 to-black h-14 w-14'></span>
               <span className='absolute hidden rounded-full lg:inline shadow-ld shadow-black bg-gradient-to-t from-green-500 to-black h-14 w-14'></span>
-              {/* <span className='absolute rounded-full bg-gradient-to-t from-green-500 to-black h-14 w-14'></span> */}
             </div>
           </div>
         </div>
